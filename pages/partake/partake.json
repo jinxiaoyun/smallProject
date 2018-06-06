@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "参与打卡",
+  "usingComponents": {
+    "my-modal": "/components/my-modal"
+  }
+}

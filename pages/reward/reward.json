@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "坚持打卡",
+  "usingComponents": {
+    "my-modal": "/components/my-modal"
+  }
+}

@@ -1,0 +1,34 @@
+
+<view class="container">
+  <my-modal wx:if="{{isModalShow}}" bindtogglemodal="toggleModal">
+    <view class='my-modal-slot'>
+      <view class='my-modal-slot-pay'>
+        <text class='my-modal-slot-rmb'>¥ 5</text>
+        <text class='my-modal-slot-you'>你需支付</text>
+      </view>
+      <view class='my-modal-slot-info'>
+        <view>
+          每位小伙伴参与打卡时需支付5元放入奖金池，坚持打卡30天后，系统会
+          <text class='my-modal-slot-color'>等额返回5元本金，并根据奖金池和参与人数，发放一个拼手气红包！</text> 如在30天内打卡中断，则你的本金将会留在奖金池中，奖励给坚持到底的伙伴们！
+        </view>
+      </view>
+      <button class='my-modal-slot-button'>参与打卡</button>
+    </view>
+  </my-modal>
+  <my-modal wx:if="{{isModalShow1}}" bindtogglemodal="toggleModal1">
+    <view class='my-modal-slot'>
+      <view class='my-modal-slot-reward'>30天奖励已经发放</view>
+      <view class='my-modal-slot-paid'>
+        <text>本金：</text>
+        <text>¥ 5</text>
+      </view>
+      <view class='my-modal-slot-line'></view>
+      <view class='my-modal-slot-received'>
+        <text>拼手气红包：</text>
+        <text>¥ 0.8</text>
+      </view>
+      <view class='my-modal-slot-line tow-line'></view>
+      <button class='my-modal-slot-button'>我知道了</button>
+    </view>
+  </my-modal>
+</view>

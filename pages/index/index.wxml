@@ -1,0 +1,91 @@
+<!--index.wxml-->
+<import src="list-item/list-item-template.wxml" />
+<view class="container">
+  <my-modal wx:if="{{isModalShow}}" bindtogglemodal="toggleModal">
+    <view class='my-modal-slot'>
+      <view class='my-modal-slot-pay'>
+        <text class='my-modal-slot-rmb'>¥ 5</text>
+        <text class='my-modal-slot-you'>你需支付</text>
+      </view>
+      <view class='my-modal-slot-info'>
+        <view>
+          每位小伙伴参与打卡时需支付5元放入奖金池，坚持打卡30天后，系统会
+          <text class='my-modal-slot-color'>等额返回5元本金，并根据奖金池和参与人数，发放一个拼手气红包！</text>
+          如在30天内打卡中断，则你的本金将会留在奖金池中，奖励给坚持到底的伙伴们！
+        </view>
+      </view>
+      <button class='my-modal-slot-button'>参与打卡</button>
+    </view>
+  </my-modal>
+  <my-modal wx:if="{{isModalShow1}}" bindtogglemodal="toggleModal1">
+    <view class='my-modal-slot'>
+      <view class = 'my-modal-slot-reward'>30天奖励已经发放</view>
+      <view class = 'my-modal-slot-paid'>
+        <text>本金：</text>
+        <text>¥ 5</text>
+      </view>
+      <view class = 'my-modal-slot-line'></view>
+      <view class = 'my-modal-slot-received'>
+        <text>拼手气红包：</text>
+        <text>¥ 0.8</text>
+      </view>
+      <view class = 'my-modal-slot-line tow-line'></view>
+      <button class='my-modal-slot-button'>我知道了</button>
+    </view>
+  </my-modal>
+  <view class='container-top'>
+    <view class='tab'>
+      <view class='tab-item' catchtap='tabTap' data-tabId="0">
+        <view class="{{selectedTab == 0 && 'slected'}}">早起</view>
+        <image wx:if="{{selectedTab == 0}}" class="tab-triangle" src="/images/triangle.png"></image>
+      </view>
+      <view class='tab-item' catchtap='tabTap' data-tabId="1">
+        <view class="{{selectedTab == 1 && 'slected'}}"> 健身 </view>
+        <image wx:if="{{selectedTab == 1}}" class="tab-triangle" src="/images/triangle.png"></image>
+      </view>
+      <view class='tab-item' catchtap='tabTap' data-tabId="2">
+        <view class="{{selectedTab == 2 && 'slected'}}">读书</view>
+        <image wx:if="{{selectedTab == 2}}" class="tab-triangle" src="/images/triangle.png"></image>
+      </view>
+    </view>
+    <view class='total-info'>
+      <view class='money'>
+        <text>当前奖池</text>
+        <text style="margin:0 6px">¥</text>
+        <text class='money-num'>10,111</text>
+      </view>
+      <view class='status'>再坚持23天获得本金和拼手气红包</view>
+      <view class='people'>
+        <view class='people-list'>
+          <view class='avatar-days'>
+            <image src='http://wx.qlogo.cn/mmopen/vi_32/1vZvI39NWFQ9XM4LtQpFrQJ1xlgZxx3w7bQxKARol6503Iuswjjn6nIGBiaycAjAtpujxyzYsrztuuICqIM5ibXQ/0'></image>
+            <text class='days'>26天</text>
+          </view>
+
+          <view class='avatar-days'>
+            <image src='http://wx.qlogo.cn/mmopen/vi_32/1vZvI39NWFQ9XM4LtQpFrQJ1xlgZxx3w7bQxKARol6503Iuswjjn6nIGBiaycAjAtpujxyzYsrztuuICqIM5ibXQ/0'></image>
+            <text class='days'>2333天</text>
+          </view>
+          <view class='avatar-days'>
+            <image src='http://wx.qlogo.cn/mmopen/vi_32/1vZvI39NWFQ9XM4LtQpFrQJ1xlgZxx3w7bQxKARol6503Iuswjjn6nIGBiaycAjAtpujxyzYsrztuuICqIM5ibXQ/0'></image>
+            <text class='days'>2333天</text>
+          </view>
+        </view>
+        <view class='number-today'>
+          <text>今日打卡</text>
+          <text>{{" " + "33333人"}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <scroll-view scroll-y='true' style="height:1rpx" bindscrolltolower='scrolltolower' class='scroll-content'>
+    <block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="{{index}}">
+      <template is="listItem"></template>
+    </block>
+  </scroll-view>
+  <view class='partake'>
+    <button class='partake-button' catchtap='palyAudio'>今日打卡
+      <text class='eight'>+8</text>
+    </button>
+  </view>
+</view>

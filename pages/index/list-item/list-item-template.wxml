@@ -1,0 +1,33 @@
+<template name="listItem">
+  <view class='item-container'>
+    <view class='item-info'>
+      <view class='item-info-user'>
+        <view class='item-info-avatar'>
+          <image src='http://wx.qlogo.cn/mmopen/vi_32/1vZvI39NWFQ9XM4LtQpFrQJ1xlgZxx3w7bQxKARol6503Iuswjjn6nIGBiaycAjAtpujxyzYsrztuuICqIM5ibXQ/0'></image>
+        </view>
+        <view class='item-info-name'>
+          <text>超级赛亚人</text>
+          <view class='item-info-status'>
+            <image class="rightPng" src='/images/right.png'></image>
+            打卡成功
+          </view>
+        </view>
+      </view>
+      <view class='item-info-time'>
+        2018.05.20 06:12
+      </view>
+    </view>
+    <view class='item-detail'>
+      <view>哈哈哈哈~</view>
+      <view class='item-detail-voice'>
+        <view class='item-detail-voice-img'>
+          <image src='/images/voice.png'></image>
+        </view>
+        <view class='item-detail-voice-duration'>12"</view>
+      </view>
+    </view>
+    <view class='item-img'>
+      <image src="http://wx.qlogo.cn/mmopen/vi_32/1vZvI39NWFQ9XM4LtQpFrQJ1xlgZxx3w7bQxKARol6503Iuswjjn6nIGBiaycAjAtpujxyzYsrztuuICqIM5ibXQ/0"></image>
+    </view>
+  </view>
+</template>

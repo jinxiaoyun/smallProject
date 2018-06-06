@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "今日心情",
+  "usingComponents": {
+    "my-modal": "/components/my-modal"
+  }
+}

@@ -1,0 +1,19 @@
+
+<view class="container">
+  <my-modal>
+    <view class='my-modal-slot'>
+      <view class='my-modal-slot-reward'>30天奖励已经发放</view>
+      <view class='my-modal-slot-paid'>
+        <text>本金：</text>
+        <text>¥ 5</text>
+      </view>
+      <view class='my-modal-slot-line'></view>
+      <view class='my-modal-slot-received'>
+        <text>拼手气红包：</text>
+        <text>¥ 0.8</text>
+      </view>
+      <view class='my-modal-slot-line tow-line'></view>
+      <button class='my-modal-slot-button' catchtap='goIndex'>我知道了</button>
+    </view>
+  </my-modal>
+</view>

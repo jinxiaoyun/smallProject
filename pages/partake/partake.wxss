@@ -1,0 +1,47 @@
+.my-modal-slot{
+  padding: 97rpx 40rpx 93rpx 40rpx;
+  font-size: 13px;
+}
+.my-modal-slot-pay{
+  font-size: 15px;
+  text-align: center;
+  color: #000;
+}
+.my-modal-slot-rmb{
+  display: block;
+}
+.my-modal-slot-info{
+  color: #9b9b9b;
+  margin: 37rpx 0 88rpx;
+  line-height: 20px;
+  text-align: justify;
+}
+.my-modal-slot-color{
+  color: #ffdc1e;
+}
+.my-modal-slot-button{
+  background-color: #ffdc1e;
+}
+
+/*我知道了 modal*/
+.my-modal-slot-reward{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 140rpx;
+}
+.my-modal-slot-line{
+  height: 1px;
+  background: #979797;
+}
+.tow-line{
+  margin-bottom: 86rpx;
+}
+
+.my-modal-slot-received, .my-modal-slot-paid{
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30rpx;
+}

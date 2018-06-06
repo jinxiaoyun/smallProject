@@ -1,0 +1,93 @@
+.item-container {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 30rpx 14rpx 25rpx 37rpx;
+  color: #4a4a4a;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-info-user {
+  display: flex;
+  justify-content: flex-start;
+  height: 81rpx;
+}
+
+.item-info-name {
+  font-size: 13px;
+  margin-left: 13rpx;
+}
+.item-info-status{
+  width: 109rpx;
+  height: 33rpx;
+  border-radius: 4rpx;
+  background-color: #4a90e2;
+  font-size: 9px;
+  color: #fff;
+  padding-left: 27rpx;
+  position: relative;
+  line-height: 33rpx;
+}
+.rightPng{
+  width: 15rpx;
+  height: 15rpx;
+  position: absolute;
+  left: 9rpx;
+  top: 8rpx;
+}
+
+.item-info-time {
+  font-size: 13px;
+  color: #9b9b9b;
+  line-height: 81rpx;
+}
+
+.item-info-avatar image {
+  width: 66rpx;
+  height: 66rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+/*item-detail*/
+.item-detail{
+  font-size: 16px;
+}
+
+.item-detail-voice{
+  margin: 20rpx 0;
+  height: 76rpx;
+  line-height: 76rpx;
+}
+.item-detail-voice-duration{
+  display: inline-block;
+  height: 76rpx;
+  line-height: 76rpx;
+  vertical-align: top;
+  margin-left: 10rpx;
+}
+
+.item-detail-voice-img{
+  display: inline-block;
+  width: 336rpx;
+  height: 76rpx;
+  border-radius: 9rpx;
+  background-color: #9fe75a;
+  position: relative;
+}
+.item-detail-voice-img image {
+  width: 22rpx;
+  height: 32rpx;
+  position: absolute;
+  left: 18rpx;
+  top: 20rpx;
+}
+
+
+/*item-img*/
+.item-img{
+  width: 665rpx;
+}

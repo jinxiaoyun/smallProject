@@ -1,0 +1,206 @@
+/**index.wxss**/
+.container-top{
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  width: 100%;
+}
+.tab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 60rpx;
+}
+.tab-item{
+  width: 33%;
+  text-align: center;
+  color: #999;
+  position: relative;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 13px;
+  margin-bottom: 30rpx;
+}
+.tab-item .slected{
+  color: #000;
+}
+
+.tab-triangle{
+  width: 30rpx;
+  height: 18rpx;
+  position: absolute;
+  bottom: -15rpx;
+  left: 50%;
+  margin-left: -15rpx;
+}
+
+.total-info{
+  background-color: #ffdd1e;
+  color: #4a4a4a;
+  width: 100%;
+  height: 360rpx;
+  padding: 23rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.money{
+  flex:0 1 auto;
+  display: flex;
+  align-items:center;
+}
+.money-num{
+  font-size: 36px;
+}
+.status{
+  flex:0 1 auto;
+  display: flex;
+  box-sizing: border-box;
+  align-items:center; 
+  width: 398rpx;
+  height:62rpx;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.5);
+  font-size: 11px;
+  justify-content: center;
+}
+
+.people{
+  width: 100%;
+  flex:0 1 auto;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content:space-between;
+  padding-top: 20rpx;
+}
+.people-list{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content:flex-start;
+}
+
+.people-list image {
+  width:66rpx;
+  height: 66rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+} 
+.avatar-days{
+  position: relative;
+  margin-right: 40rpx;
+}
+.days{
+  display: block;
+  position: absolute;
+  top:-10rpx;
+  left:40rpx;
+  min-width:32rpx;
+  white-space:nowrap;
+  height: 32rpx;
+  line-height: 32rpx;
+  background-color: #4a90e2;
+  border-radius: 5px;
+  font-size: 10px;
+  text-align: center;
+  color: #fff;
+  padding: 0px 4px;  
+}
+.number-today{
+  font-size: 16px;
+}
+
+.scroll-content{
+  /* height: 100%; */
+  box-sizing: border-box;
+  flex-grow:1;
+  flex-shrink:0;
+  /* padding-top: 455rpx; */
+  background-color: #ededed;
+}
+
+
+
+
+
+
+
+
+/* 页面底部按钮 */
+
+.partake{
+  box-sizing: border-box;
+  bottom: 0;
+  width: 100%;
+  height: 140rpx;
+  background:rgba(255,255,255,0.60);
+  padding:23rpx 40rpx;
+}
+.partake .partake-button{
+  background-color: #030001; /*#4a4a4a*/
+  color: #fff;
+  border-radius:10rpx;
+}
+
+.eight{
+  display: inline-block;
+  width: 42rpx;
+  height: 42rpx;
+  background-color: #f5a623;
+  border-radius:50%;
+  font-size: 12px;
+  line-height: 42rpx;
+}
+
+.my-modal-slot{
+  padding: 97rpx 40rpx 93rpx 40rpx;
+  font-size: 13px;
+}
+.my-modal-slot-pay{
+  font-size: 15px;
+  text-align: center;
+  color: #000;
+}
+.my-modal-slot-rmb{
+  display: block;
+}
+.my-modal-slot-info{
+  color: #9b9b9b;
+  margin: 37rpx 0 88rpx;
+  line-height: 20px;
+  text-align: justify;
+}
+.my-modal-slot-color{
+  color: #ffdc1e;
+}
+.my-modal-slot-button{
+  background-color: #ffdc1e;
+}
+
+/*我知道了 modal*/
+.my-modal-slot-reward{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 140rpx;
+}
+.my-modal-slot-line{
+  height: 1px;
+  background: #979797;
+}
+.tow-line{
+  margin-bottom: 86rpx;
+}
+
+.my-modal-slot-received, .my-modal-slot-paid{
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30rpx;
+}
+
+@import 'list-item/list-item-template.wxss';
